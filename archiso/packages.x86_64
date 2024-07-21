@@ -167,7 +167,7 @@ make
 xorg-xkill
 xterm
 xorg-xrdb
-mkinitcpio-openswap
+#mkinitcpio-openswap
 
 ##### you can also use nmtui from the terminal
 networkmanager
@@ -274,6 +274,9 @@ neofetch
 
 linux-hardened
 linux-hardened-headers
+
+linux
+linux-headers
 
 plasma-meta
 dolphin
