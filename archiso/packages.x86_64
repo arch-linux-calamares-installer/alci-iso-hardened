@@ -142,12 +142,13 @@ zsh
 
 #alci-dwm
 #alci-dwm-nemesis
-alci-calamares
+calamares
 #alci-calamares-dev
 #alci-calamares-config
 #alci-calamares-config-btrfs
 #alci-calamares-config-dev
-alci-calamares-config-hardened
+#alci-calamares-config-hardened
+qalaa-calamares-config
 #alci-calamares-config-lts
 #alci-calamares-config-pure
 #alci-calamares-config-xanmod

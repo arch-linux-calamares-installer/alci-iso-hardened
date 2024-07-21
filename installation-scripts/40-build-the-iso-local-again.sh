@@ -12,8 +12,8 @@ echo
 
 # setting of the general parameters
 archisoRequiredVersion="archiso 78-1"
-buildFolder="build"
-outFolder="output"
+buildFolder="/mnt/fda14e36-49c8-4508-a4b0-f37189565cd9/iso/QalaaLinux/qalaa-iso1/build"
+outFolder="/mnt/fda14e36-49c8-4508-a4b0-f37189565cd9/iso/QalaaLinux/qalaa-iso1/output"
 archisoVersion=$(sudo pacman -Q archiso)
 
 echo "################################################################## "
