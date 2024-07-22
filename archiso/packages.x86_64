@@ -143,6 +143,15 @@ zsh
 #alci-dwm
 #alci-dwm-nemesis
 calamares
+yaml-cpp
+kpmcore
+icu
+efibootmgr
+gtk-update-icon-cache
+hwinfo
+squashfs-tools
+libpwquality
+mkinitcpio-openswap
 #alci-calamares-dev
 #alci-calamares-config
 #alci-calamares-config-btrfs
@@ -168,7 +177,7 @@ make
 xorg-xkill
 xterm
 xorg-xrdb
-#mkinitcpio-openswap
+mkinitcpio-openswap
 
 ##### you can also use nmtui from the terminal
 networkmanager
@@ -191,9 +200,10 @@ neofetch
 #systemctl enable vboxservice
 #systemctl start vboxservice
 #to have fullscreen
-#virtualbox-guest-utils
+#virtualbox
+virtualbox-guest-utils
 
-#xf86-video-intel
+xf86-video-intel
 #xf86-video-amdgpu
 #xf86-video-nouveau
 
@@ -279,6 +289,7 @@ linux-hardened-headers
 linux
 linux-headers
 
+plasma
 plasma-meta
 dolphin
 konsole
