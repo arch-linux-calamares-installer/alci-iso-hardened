@@ -135,15 +135,15 @@ xfsprogs
 xl2tpd
 
 ###archiso-extra
-aic94xx-firmware
+# aic94xx-firmware
 dialog
 dnsutils
-libadwaita-without-adwaita-git
+# libadwaita-without-adwaita-git
 linux-headers
 logrotate
 ntp
-upd72020x-fw
-wd719x-firmware
+# upd72020x-fw
+# wd719x-firmware
 wget
 
 ###xorg
@@ -217,7 +217,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 networkmanager-qt5
-rtl8821cu-morrownr-dkms-git
+# rtl8821cu-morrownr-dkms-git
 
 ###file management
 gvfs
@@ -304,7 +304,7 @@ papirus-icon-theme
 ###themes
 #adapta-gtk-theme
 arc-gtk-theme
-arc-darkest-theme-git
+# arc-darkest-theme-git
 kvantum-qt5
 #kvantum-qt6-git
 #openbox-arc-git
@@ -321,13 +321,13 @@ bat
 #dex
 #discord
 duf
-edid-decode-git
+# edid-decode-git
 evince
 expac
 file-roller
 #filezilla
 git
-gksu
+# gksu
 #gnome-disk-utility
 #gnome-keyring
 #gnome-screenshot
@@ -336,12 +336,12 @@ gksu
 gparted
 #gpick
 #gtop
-hardinfo2
+# hardinfo2
 #hddtemp
 htop
 #hunspell
 #hunspell-en_US
-hw-probe
+# hw-probe
 #hyphen
 #hyphen-en
 #grsync
@@ -352,7 +352,7 @@ laptop-detect
 lsb-release
 mlocate
 #nomacs-qt6-git
-oh-my-zsh-git
+# oh-my-zsh-git
 p7zip
 pkgfile
 #plank
@@ -365,7 +365,7 @@ polkit
 #qt5ct
 #qt5-styleplugins
 qt5-tools
-qt5-webkit
+# qt5-webkit
 #powertop
 ripgrep
 #simple-scan

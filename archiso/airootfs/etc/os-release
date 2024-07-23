@@ -1,8 +1,0 @@
-NAME="Qalaa Linux"
-PRETTY_NAME="Qalaa Linux"
-ID=qalaalinux
-ID_LIKE=arch
-BUILD_ID=rolling
-ANSI_COLOR="0;36"
-HOME_URL="https://github.com/MILOUDIAS/MILOUDIAS"
-#LOGO=arcolinux-hello
