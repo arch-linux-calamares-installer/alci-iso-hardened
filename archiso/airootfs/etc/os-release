@@ -1,0 +1,6 @@
+
+NAME="Qalaa Linux"
+ID=qalaalinux
+ID_LIKE=qalaa
+BUILD_ID=rolling
+ANSI_COLOR="0;36"

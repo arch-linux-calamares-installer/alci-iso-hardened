@@ -1,4 +1,3 @@
-# mkinitcpio preset file for the 'linux' package on archiso
 # mkinitcpio preset file for the kernel
 ALL_kver='/boot/vmlinuz-linux'
 #PRESETS=('default' 'fallback')

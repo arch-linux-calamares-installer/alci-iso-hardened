@@ -123,8 +123,8 @@ echo
 echo "Copying the Archiso folder to build work"
 echo
 mkdir $buildFolder
-cp -r ../archiso $buildFolder/archiso
 
+cp -r ../archiso $buildFolder/archiso
 # echo
 # echo "################################################################## "
 # tput setaf 2
@@ -228,7 +228,6 @@ echo
 [ -d $outFolder ] || mkdir $outFolder
 cd $buildFolder/archiso/
 sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
-
 # echo
 # echo "###################################################################"
 # tput setaf 2
@@ -254,11 +253,11 @@ sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
 # 	echo "########################"
 # 	md5sum $isoLabel | tee $isoLabel.md5
 # 	echo
+
 echo "Moving pkglist.x86_64.txt"
 echo "########################"
 rename=$(date +%Y-%m-%d)
 cp $buildFolder/iso/arch/pkglist.x86_64.txt $outFolder/archlinux-$rename-pkglist.txt
-
 #echo
 #echo "##################################################################"
 #tput setaf 2

@@ -349,7 +349,7 @@ htop
 #jsoncpp
 libmtp
 laptop-detect
-lsb-release
+#lsb-release
 mlocate
 #nomacs-qt6-git
 # oh-my-zsh-git
@@ -426,7 +426,7 @@ xterm
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
 #######################################################
-
+accountsservice
 sddm
 bash-completion
 os-prober
@@ -442,6 +442,7 @@ mkinitcpio-openswap
 networkmanager
 network-manager-applet
 
+lsb-release
 #######################################################
 ###                    EXTRAS                       ###
 #######################################################
@@ -542,11 +543,8 @@ neofetch
 #grub-btrfs
 #timeshift-autosnap
 
-linux-hardened
-linux-hardened-headers
-
-linux
-linux-headers
+#linux
+#linux-headers
 
 plasma
 plasma-meta
@@ -558,6 +556,6 @@ packagekit-qt6
 
 #qalaalinux-sddm-simplicity-git
 #bibata-cursor-theme-bin
-
+qalaalinux-neofetch
 #grub theme
 qalaa-grub-theme
