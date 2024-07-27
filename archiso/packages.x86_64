@@ -543,8 +543,8 @@ neofetch
 #grub-btrfs
 #timeshift-autosnap
 
-#linux
-#linux-headers
+linux-lts
+linux-lts-headers
 
 plasma
 plasma-meta
