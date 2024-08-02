@@ -1,0 +1,35 @@
+#!/bin/bash
+
+echo "##########################################"
+echo "Start qalaalinux-before"
+echo "##########################################"
+
+echo "##########################################"
+echo "Populate Core Team keys"
+echo "##########################################"
+#pacman-key --init
+#pacman-key --populate qalaalinux
+#pacman-key --populate chaotic
+
+echo "##########################################"
+echo "Modifying the /etc/default/grub"
+echo "##########################################"
+# Create a temporary file with the desired content
+sudo sed -i 's/splash//g' "/etc/default/grub"
+
+echo "##########################################"
+echo "Copy grub Qalaa theme (archiso deletes /boot when making the ISO)"
+echo "##########################################"
+sudo mkdir -p /boot/grub/themes
+sudo cp -Rf /usr/share/grub/themes/qalaa /boot/grub/themes/
+
+echo "##########################################"
+echo "Changing into our own linux.preset"
+echo "##########################################"
+# mv -v /etc/mkinitcpio.d/qalaalinux /etc/mkinitcpio.d/linux.preset
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "##########################################"
+echo "End qalaalinux-before"
+echo "##########################################"

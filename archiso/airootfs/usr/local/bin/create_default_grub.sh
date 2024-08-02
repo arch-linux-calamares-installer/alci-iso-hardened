@@ -1,9 +1,13 @@
+#!/bin/bash
+
+# Create a temporary file with the desired content
+cat <<EOL >/tmp/grub
 # GRUB boot loader configuration
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="QalaaLinux"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 audit=0 logo.nologo"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 logo.nologo"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
@@ -52,3 +56,17 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
 GRUB_SAVEDEFAULT="true"
+EOL
+
+# Move the file to /etc with appropriate permissions
+sudo mv -f /tmp/grub /etc/default/grub
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+# Verify that the file has been moved and contains the correct content
+if [ -f /etc/default/grub ]; then
+	echo "/etc/lsb-release created successfully with the following content:"
+	cat /etc/default/grub
+else
+	echo "Failed to create /etc/default/grub"
+fi
